@@ -30,17 +30,27 @@ p {
     margin-bottom: 0px;
 }
 
-/* Header */
 .container {
+    margin-left: auto;
+    margin-right: auto;
     width: 1158px;
     padding: 0 15px;
-    margin-bottom: 48px;
+    outline: 1px solid tomato;
+}
+/* .container.no-padding {
+    padding: 0;
+} */
+
+/* Header */
+header {
+    padding: 24px
 }
 
 .list {
     list-style-type: none;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 .link {
@@ -127,7 +137,10 @@ p {
     background-color: var(--links-hover-color);
 }
 
-/* Progects */
+/* All Sections */
+.section {
+    padding: 120px 0 120px 0;
+}
 
 .section-title {
     font-weight: 700;
@@ -156,15 +169,15 @@ p {
     margin-bottom: 8px;
 }
 
-.advant .container {
+/* .advant .container {
     margin-bottom: 120px;
-}
+} */
 
 /* Projectes */
 
-.project .container {
+/* .project .container {
     margin-bottom: 120px;
-}
+} */
 .project .section-title {
     letter-spacing: 0.02em;
     margin-bottom: 72px;
@@ -175,6 +188,9 @@ p {
 .team {
     background-color: var(--text-footer-color);
 }
+/* .team .container {
+    padding: 120px 156px;
+} */
 
 .team .section-title {
     margin-bottom: 48px;
@@ -191,18 +207,29 @@ p {
 
 .team .item {
     background-color: var(--primary-white-color);
+    padding-bottom: 32px; 
 }
 
 .team .text {
     /* font-weight: 400; */
     text-align: center;
-    margin-bottom: 32px ;
+    /* margin-bottom: 32px ; */
 }
 
 /* Footer */
 .footer {
     background-color: var(--title-text-color);
     color: var(--text-footer-color);
+    padding: 100px 1020px 100px 156px; 
+}
+.footer .container {
+    width: 264px;
+    margin: 0px;
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 16px;
 }
 
 .footer .logo-wtf {
