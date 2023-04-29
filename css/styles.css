@@ -5,11 +5,11 @@
     --links-text-color: #4D5AE5;
     --links-hover-color: #404BBF;
     --primary-white-color: #ffffff;
-    --text-footer-color:#F4F4FD;
+    --text-footer-color: #F4F4FD;
 }
 
 
-body { 
+body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
 
@@ -17,23 +17,38 @@ body {
     letter-spacing: 0.02em;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /* Header */
-.list {
-    list-style-type: none;
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin-bottom: 48px;
 }
 
-.link{
+.list {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.link {
     text-decoration: none;
 }
 
-.logo {   
-    font-family: 'Raleway',sans-serif;
+.logo {
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -45,9 +60,9 @@ h1,h2,h3 {
 
 .logo-wtf {
     color: var(--title-text-color);
-} 
+}
 
-.list .link{
+.list .link {
     color: var(--title-text-color);
     font-family: 'Roboto';
     font-weight: 500;
@@ -56,7 +71,7 @@ h1,h2,h3 {
 }
 
 .list .link:hover,
-.list .link:focus{
+.list .link:focus {
     color: var(--links-hover-color);
 }
 
@@ -64,8 +79,9 @@ h1,h2,h3 {
     font-style: normal;
 }
 
-.info .link{
+.info .link {
     color: var(--primary-text-color);
+    
 }
 
 .info .link:hover,
@@ -77,6 +93,7 @@ h1,h2,h3 {
 /* Hero section 1*/
 .hero {
     background-color: var(--title-text-color);
+    text-align: center;
 }
 
 .hero-title {
@@ -84,9 +101,9 @@ h1,h2,h3 {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
-
+    width: 496px;
+    margin: 0px auto 48px;
 }
 
 .hero-btn {
@@ -98,6 +115,11 @@ h1,h2,h3 {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px; 
+    border: 1px transparent;
+    margin-bottom: 188px;  
 }
 
 .hero-btn:hover,
@@ -105,15 +127,14 @@ h1,h2,h3 {
     background-color: var(--links-hover-color);
 }
 
-/* Sections */
+/* Progects */
 
-.section-title{
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 0.02em;
 }
 
 .list .title {
@@ -121,29 +142,51 @@ h1,h2,h3 {
     font-size: 20px;
     line-height: 1.2;
 }
+
 .list .text {
     /* font-weight: 400; */
     font-size: 16px;
     line-height: 1.5;
 }
+
 /* Advanteges */
 
 .advant .title {
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
+
+.advant .container {
+    margin-bottom: 120px;
+}
+
 /* Projectes */
 
-.project .title{
-    letter-spacing: 0.02em;
+.project .container {
+    margin-bottom: 120px;
 }
+.project .section-title {
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+}
+
+
 /* Team */
-.team{
+.team {
     background-color: var(--text-footer-color);
 }
 
+.team .section-title {
+    margin-bottom: 48px;
+}
+
+.team .foto {
+    margin-bottom: 32px;
+}
 .team .title {
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team .item {
@@ -153,17 +196,19 @@ h1,h2,h3 {
 .team .text {
     /* font-weight: 400; */
     text-align: center;
+    margin-bottom: 32px ;
 }
 
 /* Footer */
 .footer {
     background-color: var(--title-text-color);
     color: var(--text-footer-color);
-    }
-
-.footer .logo-wtf{
-   color: var(--text-footer-color); 
 }
+
+.footer .logo-wtf {
+    color: var(--text-footer-color);
+}
+
 .footer .text {
     /* font-weight: 400; */
     font-size: 16px;
@@ -197,4 +242,5 @@ h1,h2,h3 {
 
 .portfolio .text {
     color: var(--primary-text-color)
-} 
+}
+    
