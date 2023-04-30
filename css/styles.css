@@ -8,7 +8,7 @@
     --text-footer-color: #F4F4FD;
 }
 
-
+/* Utilites */
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -30,22 +30,6 @@ p {
     margin-bottom: 0px;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1158px;
-    padding: 0 15px;
-    outline: 1px solid tomato;
-}
-/* .container.no-padding {
-    padding: 0;
-} */
-
-/* Header */
-header {
-    padding: 24px
-}
-
 .list {
     list-style-type: none;
     margin-top: 0px;
@@ -55,6 +39,34 @@ header {
 
 .link {
     text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-top: 0;
+    padding-right: 15px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    /* outline: 1px solid tomato; */
+}
+/* .container.no-padding {
+    padding: 0;
+} */
+
+/* Header */
+.page-header .container{
+    display: flex;
+}
+
+.site-nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .list {
+    display: flex;
 }
 
 .logo {
@@ -72,12 +84,30 @@ header {
     color: var(--title-text-color);
 }
 
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 40px;
+
+    /* outline: 1px solid teal; */
+}
+
+.page-header .logo {
+    margin-right: 76px;
+}
+
 .list .link {
     color: var(--title-text-color);
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+
+}
+
+.site-nav .item:last-child{
+    margin-right: 0;
 }
 
 .list .link:hover,
@@ -85,8 +115,24 @@ header {
     color: var(--links-hover-color);
 }
 
+/* Adress */
+
 .info {
     font-style: normal;
+    margin-left: auto;
+}
+
+.info .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 40px;
+
+    /* outline: 1px solid teal; */
+}
+
+.info .item:last-child {
+    margin-right: 0;
 }
 
 .info .link {
@@ -107,16 +153,27 @@ header {
 }
 
 .hero-title {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-bottom: 48px;
+    margin-right: auto;
+    width: 496px;
+
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
-    margin: 0px auto 48px;
+    
 }
 
 .hero-btn {
+    /* margin-bottom: 188px; */
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    border: 1px transparent;
+        
     background-color: var(--links-text-color);
     color: var(--primary-white-color);
     font-family: inherit;
@@ -125,11 +182,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    padding: 16px 32px;
-    border-radius: 4px;
-    min-width: 169px; 
-    border: 1px transparent;
-    margin-bottom: 188px;  
+
 }
 
 .hero-btn:hover,
@@ -139,7 +192,10 @@ header {
 
 /* All Sections */
 .section {
-    padding: 120px 0 120px 0;
+    padding-top: 120px;
+    padding-left: 0px;
+    padding-bottom: 120px;
+    padding-right: 0px;
 }
 
 .section-title {
@@ -162,25 +218,46 @@ header {
     line-height: 1.5;
 }
 
-/* Advanteges */
+/* Advanteges section 2*/
 
 .advant .title {
-    letter-spacing: 0.02em;
     margin-bottom: 8px;
+
+    letter-spacing: 0.02em;   
 }
 
-/* .advant .container {
-    margin-bottom: 120px;
-} */
+.advant .list {
+    display: flex;
+}
 
-/* Projectes */
+.advant .item {
+    width: calc((100%-72px)/4);
 
-/* .project .container {
-    margin-bottom: 120px;
-} */
+    /* outline: 1px solid teal; */
+}
+
+.advant .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+/* Projectes section 3*/
+
 .project .section-title {
-    letter-spacing: 0.02em;
     margin-bottom: 72px;
+
+    letter-spacing: 0.02em;
+}
+
+.project .list {
+    display: flex;
+}
+
+.project .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.image {
+    display: block;
 }
 
 
@@ -188,26 +265,33 @@ header {
 .team {
     background-color: var(--text-footer-color);
 }
-/* .team .container {
-    padding: 120px 156px;
-} */
 
 .team .section-title {
     margin-bottom: 48px;
 }
 
-.team .foto {
+.team .list {
+    display: flex;
+}
+
+.team .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.team .image {
     margin-bottom: 32px;
 }
 .team .title {
+    margin-bottom: 8px;
+        
     text-align: center;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .team .item {
+    padding-bottom: 32px;
+
     background-color: var(--primary-white-color);
-    padding-bottom: 32px; 
 }
 
 .team .text {
@@ -218,18 +302,17 @@ header {
 
 /* Footer */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+ 
     background-color: var(--title-text-color);
     color: var(--text-footer-color);
-    padding: 100px 1020px 100px 156px; 
-}
-.footer .container {
-    width: 264px;
-    margin: 0px;
 }
 
 .footer .logo {
-    display: block;
     margin-bottom: 16px;
+
+    display: block;
 }
 
 .footer .logo-wtf {
@@ -237,6 +320,7 @@ header {
 }
 
 .footer .text {
+    width: 264px;
     /* font-weight: 400; */
     font-size: 16px;
     line-height: 1.5;
@@ -244,7 +328,23 @@ header {
 
 /* Portfolio */
 
-.list .btn {
+.portfolio .filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.filter .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+
+.portfolio .btn {
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+
     background-color: var(--text-footer-color);
     color: var(--links-text-color);
     font-family: inherit;
@@ -252,18 +352,38 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    border: 1px solid #E7E9FC;
+    border: 1px solid transparent;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.list .btn:hover,
-.list .btn:focus {
+.portfolio .btn:hover,
+.portfolio .btn:focus {
     background-color: var(--links-hover-color);
     color: var(--primary-white-color);
 }
 
+.portfolio .type-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-work .item {
+    margin-right: 24px;
+    padding-bottom: 32px;
+}
+
+.type-work .item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.portfolio .image {
+    margin-bottom: 32px;
+}
+
 .portfolio .title {
+    margin-bottom: 8px;
+
     letter-spacing: 0.02em;
 }
 
