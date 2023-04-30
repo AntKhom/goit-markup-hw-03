@@ -229,6 +229,9 @@ p {
 }
 
 /* Advanteges section 2*/
+.section.advant {
+    padding-bottom: 0;
+}
 
 .advant .title {
     margin-bottom: 8px;
