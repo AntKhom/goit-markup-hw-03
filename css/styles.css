@@ -56,6 +56,9 @@ p {
 } */
 
 /* Header */
+.page-header{
+    border-bottom: 1px solid #E7E9FC;
+}
 .page-header .container{
     display: flex;
 }
@@ -370,11 +373,17 @@ p {
 
 .type-work .item {
     margin-right: 24px;
+    margin-bottom: 48px;
     padding-bottom: 32px;
+    border-bottom: 1px solid #E7E9FC
 }
 
 .type-work .item:nth-child(3n) {
     margin-right: 0px;
+}
+
+.type-work .item:nth-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .portfolio .image {
