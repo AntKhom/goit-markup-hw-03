@@ -326,14 +326,10 @@ p {
     color: var(--text-footer-color);
 }
 
-.footer .link {
-    display: inline-block;
-}
-
 .footer .logo {
     margin-bottom: 16px;
 
-    display: block;
+    display: inline-block;
 }
 
 .footer .logo-wtf {
@@ -387,6 +383,7 @@ p {
 .portfolio .btn:focus {
     background-color: var(--links-hover-color);
     color: var(--primary-white-color);
+    border: 1px solid transparent;
 }
 
 .portfolio .type-work {
