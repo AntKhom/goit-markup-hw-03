@@ -229,9 +229,6 @@ p {
 }
 
 /* Advanteges section 2*/
-.section.advant {
-    padding-bottom: 0;
-}
 
 .advant .title {
     margin-bottom: 8px;
@@ -254,6 +251,10 @@ p {
 }
 
 /* Projectes section 3*/
+
+.section.project {
+    padding-top: 0;
+}
 
 .project .section-title {
     margin-bottom: 72px;
